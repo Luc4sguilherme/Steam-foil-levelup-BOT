@@ -1,0 +1,45 @@
+{
+  "name": "steam-foil-levelup-bot",
+  "version": "1.0.0",
+  "description": "A steam Cardsets/LevelUp BOT",
+  "author": "Lucas Guilherme",
+  "homepage": "https://github.com/Luc4sguilherme/Steam-foil-levelup-BOT",
+  "bugs": {
+    "url": "https://github.com/Luc4sguilherme/Steam-foil-levelup-BOT/issues"
+  },
+  "license": "MIT",
+  "main": "./src/index.js",
+  "scripts": {
+    "lint": "eslint --fix ./src/**/*.js",
+    "start": "node --max-old-space-size=4096 src/index.js",
+    "update": "npx -p npm-check-updates ncu -u && npm i"
+  },
+  "engines": {
+    "node": ">=14.15.0"
+  },
+  "dependencies": {
+    "async": "^3.2.0",
+    "axios": "^0.21.1",
+    "cli-color": "^2.0.0",
+    "graceful-fs": "^4.2.6",
+    "joi": "^17.4.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "steam-totp": "^2.1.1",
+    "steam-tradeoffer-manager": "^2.10.3",
+    "steam-user": "^4.19.6",
+    "steamcommunity": "^3.42.0",
+    "tree-kill": "^1.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.0"
+  }
+}
